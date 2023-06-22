@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>formulário</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>ID</ion-label>
+      <ion-input type="text" [(ngModel)]="id"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CPF</ion-label>
+      <ion-input type="text" [(ngModel)]="cpf"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="salvar()">Salvar</button>
+
+  </ion-list>
+</ion-content>
